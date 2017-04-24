@@ -1,11 +1,42 @@
 package methods;
 
+import java.util.ArrayList;
+
 public class MethodPractice {
 
 	public static void main(String[] args) {
 
 		System.out.println("Exercise: 01 " + getName("Shakil Khan"));
 
+		System.out.println("Exercise: 02 " + getEvenNumberList(20));
+
+	}
+
+	/**
+	 * Exercise: 02 Write a method that take a number input and return the List
+	 * of all even number from 0 to that given number.
+	 * 
+	 * Parameter: int number
+	 * 
+	 * Return type: ArrayList<Integer>
+	 * 
+	 * Serving Bucket: List
+	 */
+
+	public static ArrayList<Integer> getEvenNumberList(int number) {
+
+		ArrayList<Integer> evenNumberList = new ArrayList<Integer>();
+
+		for (int i = 0; i <= number; i++) {
+
+			if (i % 2 == 0) {
+
+				evenNumberList.add(i);
+
+			}
+		}
+
+		return evenNumberList;
 	}
 
 	/**
@@ -27,4 +58,5 @@ public class MethodPractice {
 
 		return name;
 	}
+
 }
