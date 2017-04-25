@@ -16,7 +16,6 @@ public class MethodPractice {
 
 	/**
 	 * Exercise: 03 Write a method that take a number input and return the List
-	 * 
 	 * of all odd number from 0 to that given number.
 	 * 
 	 * Parameter: int number
@@ -44,7 +43,6 @@ public class MethodPractice {
 
 	/**
 	 * Exercise: 02 Write a method that take a number input and return the List
-	 * 
 	 * of all even number from 0 to that given number.
 	 * 
 	 * Parameter: int number
@@ -72,7 +70,6 @@ public class MethodPractice {
 
 	/**
 	 * Exercise: 01 Write a method that take your name input and return your
-	 * 
 	 * name.
 	 * 
 	 * Parameter: String text
