@@ -14,6 +14,28 @@ public class MethodPractice {
 
 		System.out.println("Exercise: 04 " + getKilometerFromMile(5) + " Kilometer");
 
+		System.out.println("Exercise: 05 " + getStringInUpperCase("Something is better then nothing."));
+
+	}
+
+	/**
+	 * Exercise: 05 Write a method that take one string input and return same
+	 * string in upper case.
+	 * 
+	 * Parameter: String text
+	 * 
+	 * Return type: String
+	 * 
+	 * Serving Bucket: Variable
+	 */
+
+	public static String getStringInUpperCase(String text) {
+
+		String upperCase = null;
+
+		upperCase = text.toUpperCase();
+
+		return upperCase;
 	}
 
 	/**
