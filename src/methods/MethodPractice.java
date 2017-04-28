@@ -12,6 +12,28 @@ public class MethodPractice {
 
 		System.out.println("Exercise: 03 " + getOddNumberList(20));
 
+		System.out.println("Exercise: 04 " + getKilometerFromMile(5) + " Kilometer");
+
+	}
+
+	/**
+	 * Exercise: 04 Write a method that take input as mile and return as
+	 * kilometer.
+	 * 
+	 * Parameter: double mile
+	 * 
+	 * Return type: double
+	 * 
+	 * Serving Bucket: Variable
+	 */
+
+	public static double getKilometerFromMile(double mile) {
+
+		double kilometer = 0;
+
+		kilometer = mile * 1.61;
+
+		return kilometer;
 	}
 
 	/**
