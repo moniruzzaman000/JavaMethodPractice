@@ -16,6 +16,28 @@ public class MethodPractice {
 
 		System.out.println("Exercise: 05 " + getStringInUpperCase("Something is better then nothing."));
 
+		System.out.println("Exercise: 06 " + getLowerCase("Something is better then nothing."));
+
+	}
+
+	/**
+	 * Exercise: 06 Write a method that take one string input and return same
+	 * string in lower case.
+	 * 
+	 * Parameter: String text
+	 * 
+	 * Return type: String
+	 * 
+	 * Serving Bucket: Variable
+	 */
+
+	public static String getLowerCase(String text) {
+
+		String lowerCase = null;
+
+		lowerCase = text.toLowerCase();
+
+		return lowerCase;
 	}
 
 	/**
