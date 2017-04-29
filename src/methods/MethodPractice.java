@@ -16,8 +16,32 @@ public class MethodPractice {
 
 		System.out.println("Exercise: 05 " + getStringInUpperCase("Something is better then nothing."));
 
-		System.out.println("Exercise: 06 " + getLowerCase("Something is better then nothing."));
+		System.out.println("Exercise: 06 " + getLowerCase("SOMEtHING IS BettER THEN NOThING."));
 
+		System.out.println("Exercise: 07 " + getIndexList("This is a String"));
+
+	}
+
+	/**
+	 * Exercise: 07 Write a method that take one String input and return the
+	 * list of all index.
+	 * 
+	 * Parameter: String text
+	 * 
+	 * Return type: ArrayList<integer>
+	 * 
+	 * Serving Bucket/Container: List
+	 */
+
+	public static ArrayList<Integer> getIndexList(String text) {
+
+		ArrayList<Integer> indexList = new ArrayList<Integer>();
+
+		for (int i = 0; i <= text.length(); i++) {
+
+			indexList.add(i);
+		}
+		return indexList;
 	}
 
 	/**
