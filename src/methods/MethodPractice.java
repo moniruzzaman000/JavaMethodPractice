@@ -20,6 +20,81 @@ public class MethodPractice {
 
 		System.out.println("Exercise: 07 " + getIndexList("This is a String"));
 
+		System.out.println("Exercise: 08 " + getCharList("Moniruzzaman"));
+
+		System.out.println("Exercise: 09 " + getSum(5));
+
+		System.out.println("Exercise: 10 " + getResult(5));
+
+	}
+
+	/**
+	 * Exercise: 10 Write a method that take one number input and return the
+	 * square of that given number.
+	 * 
+	 * Parameter: int number
+	 * 
+	 * Return type: int
+	 * 
+	 * Serving Bucket: Variable
+	 */
+
+	public static int getResult(int number) {
+
+		int result = 0;
+
+		for (int i = 1; i <= number; i++) {
+
+			result = i * i;
+		}
+
+		return result;
+	}
+
+	/**
+	 * Exercise: 09 Write a method that take one number input and return the sum
+	 * of 1 to that given number.
+	 * 
+	 * Parameter: int number
+	 * 
+	 * Return type: int
+	 * 
+	 * Serving Bucket: Variable
+	 */
+
+	public static int getSum(int number) {
+
+		int sum = 0;
+
+		for (int i = 1; i <= number; i++) {
+
+			sum = sum + i;
+		}
+
+		return sum;
+	}
+
+	/**
+	 * Exercise: 08 Write a method that take one string input and return a List
+	 * of all character.
+	 * 
+	 * Parameter: String text
+	 * 
+	 * Return type: ArrayList<Character>
+	 * 
+	 * Serving Bucket: List
+	 */
+
+	public static ArrayList<Character> getCharList(String text) {
+
+		ArrayList<Character> charList = new ArrayList<Character>();
+
+		for (int i = 0; i <= text.length() - 1; i++) {
+
+			charList.add(text.charAt(i));
+		}
+
+		return charList;
 	}
 
 	/**
