@@ -1,6 +1,7 @@
 package methods;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class MethodPractice {
 
@@ -26,11 +27,67 @@ public class MethodPractice {
 
 		System.out.println("Exercise: 10 " + getResult(5));
 
+		System.out.println("Exercise: 11 " + Arrays.toString(getNumberArray(5)));
+
+		System.out.println("Exercise: 12 " + getNumberList(15));
+
 	}
 
 	/**
-	 * Exercise: 10 Write a method that take one number input and return the
-	 * square of that given number.
+	 * Exercise: 12
+	 * 
+	 * Write a method that take one number input and return a numberList
+	 * starting from 0 to that given number.
+	 * 
+	 * Parameter: int number
+	 * 
+	 * Return Type: ArrayList<Integer>
+	 * 
+	 * Serving Bucket: List
+	 */
+
+	public static ArrayList<Integer> getNumberList(int number) {
+
+		ArrayList<Integer> numberList = new ArrayList<Integer>();
+
+		for (int i = 0; i <= number; i++) {
+
+			numberList.add(i);
+		}
+
+		return numberList;
+	}
+
+	/**
+	 * Exercise: 11
+	 * 
+	 * Write a method that take one number input and return an Array that
+	 * contains 0 to that given number.
+	 * 
+	 * Parameter: int number
+	 * 
+	 * Return Type: int[]
+	 * 
+	 * Serving Bucket: Array
+	 */
+
+	public static int[] getNumberArray(int number) {
+
+		int[] numberArray = new int[number + 1];
+
+		for (int i = 0; i <= number; i++) {
+
+			numberArray[i] = i;
+		}
+
+		return numberArray;
+	}
+
+	/**
+	 * Exercise: 10
+	 * 
+	 * Write a method that take one number input and return the square of that
+	 * given number.
 	 * 
 	 * Parameter: int number
 	 * 
@@ -44,22 +101,22 @@ public class MethodPractice {
 		int result = 0;
 
 		for (int i = 1; i <= number; i++) {
-
 			result = i * i;
 		}
-
 		return result;
 	}
 
 	/**
-	 * Exercise: 09 Write a method that take one number input and return the sum
-	 * of 1 to that given number.
+	 * Exercise: 09
+	 * 
+	 * Write a method that take one number input and return the sum of 1 to that
+	 * given number.
 	 * 
 	 * Parameter: int number
 	 * 
-	 * Return type: int
+	 * Return type: int Serving
 	 * 
-	 * Serving Bucket: Variable
+	 * Bucket: Variable
 	 */
 
 	public static int getSum(int number) {
@@ -67,16 +124,16 @@ public class MethodPractice {
 		int sum = 0;
 
 		for (int i = 1; i <= number; i++) {
-
 			sum = sum + i;
 		}
-
 		return sum;
 	}
 
 	/**
-	 * Exercise: 08 Write a method that take one string input and return a List
-	 * of all character.
+	 * Exercise: 08
+	 * 
+	 * Write a method that take one string input and return a List of all
+	 * character.
 	 * 
 	 * Parameter: String text
 	 * 
@@ -90,16 +147,16 @@ public class MethodPractice {
 		ArrayList<Character> charList = new ArrayList<Character>();
 
 		for (int i = 0; i <= text.length() - 1; i++) {
-
 			charList.add(text.charAt(i));
 		}
-
 		return charList;
 	}
 
 	/**
-	 * Exercise: 07 Write a method that take one String input and return the
-	 * list of all index.
+	 * Exercise: 07
+	 * 
+	 * Write a method that take one String input and return the list of all
+	 * index.
 	 * 
 	 * Parameter: String text
 	 * 
@@ -113,15 +170,16 @@ public class MethodPractice {
 		ArrayList<Integer> indexList = new ArrayList<Integer>();
 
 		for (int i = 0; i <= text.length(); i++) {
-
 			indexList.add(i);
 		}
 		return indexList;
 	}
 
 	/**
-	 * Exercise: 06 Write a method that take one string input and return same
-	 * string in lower case.
+	 * Exercise: 06
+	 * 
+	 * Write a method that take one string input and return same string in lower
+	 * case.
 	 * 
 	 * Parameter: String text
 	 * 
@@ -131,7 +189,6 @@ public class MethodPractice {
 	 */
 
 	public static String getLowerCase(String text) {
-
 		String lowerCase = null;
 
 		lowerCase = text.toLowerCase();
@@ -143,7 +200,9 @@ public class MethodPractice {
 	 * Exercise: 05 Write a method that take one string input and return same
 	 * string in upper case.
 	 * 
-	 * Parameter: String text
+	 * Parameter:
+	 * 
+	 * String text
 	 * 
 	 * Return type: String
 	 * 
@@ -160,8 +219,9 @@ public class MethodPractice {
 	}
 
 	/**
-	 * Exercise: 04 Write a method that take input as mile and return as
-	 * kilometer.
+	 * Exercise: 04
+	 * 
+	 * Write a method that take input as mile and return as kilometer.
 	 * 
 	 * Parameter: double mile
 	 * 
@@ -180,8 +240,10 @@ public class MethodPractice {
 	}
 
 	/**
-	 * Exercise: 03 Write a method that take a number input and return the List
-	 * of all odd number from 0 to that given number.
+	 * Exercise: 03
+	 * 
+	 * Write a method that take a number input and return the List of all odd
+	 * number from 0 to that given number.
 	 * 
 	 * Parameter: int number
 	 * 
@@ -207,8 +269,10 @@ public class MethodPractice {
 	}
 
 	/**
-	 * Exercise: 02 Write a method that take a number input and return the List
-	 * of all even number from 0 to that given number.
+	 * Exercise: 02
+	 * 
+	 * Write a method that take a number input and return the List of all even
+	 * number from 0 to that given number.
 	 * 
 	 * Parameter: int number
 	 * 
@@ -234,8 +298,9 @@ public class MethodPractice {
 	}
 
 	/**
-	 * Exercise: 01 Write a method that take your name input and return your
-	 * name.
+	 * Exercise: 01
+	 * 
+	 * Write a method that take your name input and return your name.
 	 * 
 	 * Parameter: String text
 	 * 
