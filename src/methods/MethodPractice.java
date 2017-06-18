@@ -31,6 +31,95 @@ public class MethodPractice {
 
 		System.out.println("Exercise: 12 " + getNumberList(15));
 
+		System.out.println("Exercise: 13 " + getAresult(19));
+
+		int[] numArray = { 5, 54, 17, 65, 30 };
+
+		System.out.println("Exercise: 14 " + getMaxNum(numArray));
+
+		System.out.println("Exercise: 15 " + getMinNum(numArray));
+
+	}
+
+	/**
+	 * Exercise: 15
+	 * 
+	 * Write a method that take one number Array input and return the Min
+	 * number.
+	 * 
+	 * Parameter: int[] numArray
+	 * 
+	 * Return type: int
+	 * 
+	 * Serving Bucket: Variable
+	 */
+
+	public static int getMinNum(int[] numArray) {
+
+		int minNum = 0;
+
+		Arrays.sort(numArray);
+
+		minNum = numArray[0];
+
+		return minNum;
+	}
+
+	/**
+	 * Exercise: 14
+	 * 
+	 * Write a method that take one number Array input and return the Max
+	 * number.
+	 * 
+	 * Parameter: int[] numArray
+	 * 
+	 * Return type: int
+	 * 
+	 * Serving Bucket: Variable
+	 */
+
+	public static int getMaxNum(int[] numArray) {
+
+		int maxNum = 0;
+
+		Arrays.sort(numArray);
+
+		int lastIndex = numArray.length - 1;
+
+		maxNum = numArray[lastIndex];
+
+		return maxNum;
+	}
+
+	/**
+	 * Exercise: 13
+	 * 
+	 * Write a method that take one number input and return fizz if the given
+	 * number divided by 5 and return buzz if the given number divided by 5 &&
+	 * 3. otherwise return fizz buzz.
+	 * 
+	 * Parameter: int number
+	 * 
+	 * Return type: String
+	 * 
+	 * Serving Bucket: Variable
+	 */
+
+	public static String getAresult(int number) {
+
+		String result = null;
+
+		if (number % 5 == 0 && number % 3 == 0) {
+			result = "buzz";
+
+		} else if (number % 5 == 0) {
+			result = "fizz";
+
+		} else {
+			result = "fizz buzz";
+		}
+
+		return result;
 	}
 
 	/**
