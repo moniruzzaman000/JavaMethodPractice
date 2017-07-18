@@ -39,13 +39,141 @@ public class MethodPractice {
 
 		System.out.println("Exercise: 15 " + getMinNum(numArray));
 
+		System.out.println("Exercise: 16 " + getConvertedAsString(20));
+
+		System.out.println("Exercise: 17 " + getConvertedAsInteger("20"));
+
+		System.out.println("Exercise: 18 " + getResult("My name is DL Roy"));
+
+		System.out.println("Exercise: 19 " + getSumOfAllIndex("String"));
+
+		System.out.println("Exercise: 20 " + getListOfLastFiveChar("Gangs of Wasipur"));
+
 	}
 
 	/**
-	 * Exercise: 15
+	 * Exercise: 20
 	 * 
-	 * Write a method that take one number Array input and return the Min
-	 * number.
+	 * Write a method that take one String input and return a List of last five
+	 * character.
+	 * 
+	 * Parameter/Input: String text
+	 * 
+	 * Return type: ArrayList<Character>
+	 * 
+	 * Serving Bucket: List
+	 */
+
+	public static ArrayList<Character> getListOfLastFiveChar(String text) {
+
+		ArrayList<Character> charList = new ArrayList<Character>();
+
+		int startingIndex = text.length() - 5;
+
+		for (int i = startingIndex; i < text.length(); i++) {
+
+			charList.add(text.charAt(i));
+		}
+
+		return charList;
+	}
+
+	/**
+	 * Exercise: 19
+	 * 
+	 * Write a method that take one String input and return the sum of all
+	 * Index.
+	 * 
+	 * Parameter: String text
+	 * 
+	 * Return Type: int
+	 * 
+	 * Serving Bucket: Variable
+	 */
+
+	public static int getSumOfAllIndex(String text) {
+
+		int sum = 0;
+
+		for (int i = 0; i < text.length(); i++) {
+
+			sum = sum + i;
+		}
+
+		return sum;
+	}
+
+	/**
+	 * Exercise: 18
+	 * 
+	 * Write a method that take String input and return true if it contains char
+	 * 'a' otherwise return false.
+	 * 
+	 * Parameter/Input: String text
+	 * 
+	 * Return Type: boolean
+	 * 
+	 * Serving Bucket: Variable
+	 */
+
+	public static boolean getResult(String text) {
+
+		boolean result = false;
+
+		text = text.toLowerCase();
+
+		result = text.contains("a");
+
+		return result;
+	}
+
+	/**
+	 * Exercise: 17
+	 * 
+	 * Write a method that take a string representation of number input and
+	 * return the same value as an integer.
+	 * 
+	 * Parameter/Input: String number
+	 * 
+	 * Return Type: int
+	 * 
+	 * Serving Bucket: Variable
+	 */
+
+	public static int getConvertedAsInteger(String number) {
+
+		int result = 0;
+
+		result = Integer.valueOf(number);
+
+		return result;
+	}
+
+	/**
+	 * Exercise: 16
+	 * 
+	 * Write a method that take a number input and return the same value as a
+	 * string.
+	 * 
+	 * Parameter/Input: int number
+	 * 
+	 * Return Type: String
+	 * 
+	 * Serving Bucket: Variable
+	 */
+
+	public static String getConvertedAsString(int number) {
+
+		String result = null;
+
+		result = String.valueOf(number);
+
+		return result;
+	}
+
+	/**
+	 * Exercise: 15 Write a method that take one number Array input and return
+	 * the Min number.
 	 * 
 	 * Parameter: int[] numArray
 	 * 
@@ -73,9 +201,9 @@ public class MethodPractice {
 	 * 
 	 * Parameter: int[] numArray
 	 * 
-	 * Return type: int
+	 * Return type: int Serving
 	 * 
-	 * Serving Bucket: Variable
+	 * Bucket: Variable
 	 */
 
 	public static int getMaxNum(int[] numArray) {
@@ -130,7 +258,7 @@ public class MethodPractice {
 	 * 
 	 * Parameter: int number
 	 * 
-	 * Return Type: ArrayList<Integer>
+	 * Return Type: ArrayList<Integer
 	 * 
 	 * Serving Bucket: List
 	 */
@@ -286,8 +414,10 @@ public class MethodPractice {
 	}
 
 	/**
-	 * Exercise: 05 Write a method that take one string input and return same
-	 * string in upper case.
+	 * Exercise: 05
+	 * 
+	 * Write a method that take one string input and return same string in upper
+	 * case.
 	 * 
 	 * Parameter:
 	 * 
