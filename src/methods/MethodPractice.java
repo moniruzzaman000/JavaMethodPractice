@@ -49,23 +49,34 @@ public class MethodPractice {
 
 		System.out.println("Exercise: 20 " + getListOfLastFiveChar("Gangs of Wasipur"));
 
+		System.out.println("Exercise: 21 " + getListOfFirstFiveChar("Gangs of Wasipur"));
+
+	}
+
+	/*
+	 * Exercise: 21 Write a method that take one string input and return a list
+	 * of first five character. Parameter: String text Return type:
+	 * ArrayList<String> Serving Container/Bucket: List
+	 */
+
+	public static ArrayList<Character> getListOfFirstFiveChar(String text) {
+		ArrayList<Character> charList = new ArrayList<Character>();
+
+		for (int i = 0; i <= 4; i++) {
+
+			charList.add(text.charAt(i));
+		}
+
+		return charList;
 	}
 
 	/**
-	 * Exercise: 20
-	 * 
-	 * Write a method that take one String input and return a List of last five
-	 * character.
-	 * 
-	 * Parameter/Input: String text
-	 * 
-	 * Return type: ArrayList<Character>
-	 * 
-	 * Serving Bucket: List
+	 * Exercise: 20 Write a method that take one String input and return a List
+	 * of last five character. Parameter: String text Return type:
+	 * ArrayList<Character> Serving Bucket: List
 	 */
 
 	public static ArrayList<Character> getListOfLastFiveChar(String text) {
-
 		ArrayList<Character> charList = new ArrayList<Character>();
 
 		int startingIndex = text.length() - 5;
@@ -79,20 +90,12 @@ public class MethodPractice {
 	}
 
 	/**
-	 * Exercise: 19
-	 * 
-	 * Write a method that take one String input and return the sum of all
-	 * Index.
-	 * 
-	 * Parameter: String text
-	 * 
-	 * Return Type: int
-	 * 
-	 * Serving Bucket: Variable
+	 * Exercise: 19 Write a method that take one String input and return the sum
+	 * of all Index. Parameter: String text Return Type: int Serving Bucket:
+	 * Variable
 	 */
 
 	public static int getSumOfAllIndex(String text) {
-
 		int sum = 0;
 
 		for (int i = 0; i < text.length(); i++) {
@@ -104,20 +107,12 @@ public class MethodPractice {
 	}
 
 	/**
-	 * Exercise: 18
-	 * 
-	 * Write a method that take String input and return true if it contains char
-	 * 'a' otherwise return false.
-	 * 
-	 * Parameter/Input: String text
-	 * 
-	 * Return Type: boolean
-	 * 
-	 * Serving Bucket: Variable
+	 * Exercise: 18 Write a method that take String input and return true if it
+	 * contains char 'a' otherwise return false. Parameter/Input: String text
+	 * Return Type: boolean Serving Bucket: Variable
 	 */
 
 	public static boolean getResult(String text) {
-
 		boolean result = false;
 
 		text = text.toLowerCase();
@@ -128,20 +123,12 @@ public class MethodPractice {
 	}
 
 	/**
-	 * Exercise: 17
-	 * 
-	 * Write a method that take a string representation of number input and
-	 * return the same value as an integer.
-	 * 
-	 * Parameter/Input: String number
-	 * 
-	 * Return Type: int
-	 * 
-	 * Serving Bucket: Variable
+	 * Exercise: 17 Write a method that take a string representation of number
+	 * input and return the same value as an integer. Parameter/Input: String
+	 * number Return Type: int Serving Bucket: Variable
 	 */
 
 	public static int getConvertedAsInteger(String number) {
-
 		int result = 0;
 
 		result = Integer.valueOf(number);
@@ -150,20 +137,12 @@ public class MethodPractice {
 	}
 
 	/**
-	 * Exercise: 16
-	 * 
-	 * Write a method that take a number input and return the same value as a
-	 * string.
-	 * 
-	 * Parameter/Input: int number
-	 * 
-	 * Return Type: String
-	 * 
+	 * Exercise: 16 Write a method that take a number input and return the same
+	 * value as a string. Parameter/Input: int number Return Type: String
 	 * Serving Bucket: Variable
 	 */
 
 	public static String getConvertedAsString(int number) {
-
 		String result = null;
 
 		result = String.valueOf(number);
@@ -173,17 +152,11 @@ public class MethodPractice {
 
 	/**
 	 * Exercise: 15 Write a method that take one number Array input and return
-	 * the Min number.
-	 * 
-	 * Parameter: int[] numArray
-	 * 
-	 * Return type: int
-	 * 
-	 * Serving Bucket: Variable
+	 * the Min number Parameter: int[] numArray Return type: int Serving Bucket:
+	 * Variable
 	 */
 
 	public static int getMinNum(int[] numArray) {
-
 		int minNum = 0;
 
 		Arrays.sort(numArray);
@@ -194,20 +167,12 @@ public class MethodPractice {
 	}
 
 	/**
-	 * Exercise: 14
-	 * 
-	 * Write a method that take one number Array input and return the Max
-	 * number.
-	 * 
-	 * Parameter: int[] numArray
-	 * 
-	 * Return type: int Serving
-	 * 
+	 * Exercise: 14 Write a method that take one number Array input and return
+	 * the Max number. Parameter: int[] numArray Return type: int Serving
 	 * Bucket: Variable
 	 */
 
 	public static int getMaxNum(int[] numArray) {
-
 		int maxNum = 0;
 
 		Arrays.sort(numArray);
@@ -220,21 +185,13 @@ public class MethodPractice {
 	}
 
 	/**
-	 * Exercise: 13
-	 * 
-	 * Write a method that take one number input and return fizz if the given
-	 * number divided by 5 and return buzz if the given number divided by 5 &&
-	 * 3. otherwise return fizz buzz.
-	 * 
-	 * Parameter: int number
-	 * 
-	 * Return type: String
-	 * 
-	 * Serving Bucket: Variable
+	 * Exercise: 13 Write a method that take one number input and return fizz if
+	 * the given number divided by 5 and return buzz if the given number divided
+	 * by 5 && 3. otherwise return fizz buzz. Parameter: int number Return type:
+	 * String Serving Bucket: Variable
 	 */
 
 	public static String getAresult(int number) {
-
 		String result = null;
 
 		if (number % 5 == 0 && number % 3 == 0) {
@@ -251,20 +208,12 @@ public class MethodPractice {
 	}
 
 	/**
-	 * Exercise: 12
-	 * 
-	 * Write a method that take one number input and return a numberList
-	 * starting from 0 to that given number.
-	 * 
-	 * Parameter: int number
-	 * 
-	 * Return Type: ArrayList<Integer
-	 * 
-	 * Serving Bucket: List
+	 * Exercise: 12 Write a method that take one number input and return a
+	 * numberList starting from 0 to that given number. Parameter: int number
+	 * Return Type: ArrayList<Integer Serving Bucket: List
 	 */
 
 	public static ArrayList<Integer> getNumberList(int number) {
-
 		ArrayList<Integer> numberList = new ArrayList<Integer>();
 
 		for (int i = 0; i <= number; i++) {
@@ -276,20 +225,12 @@ public class MethodPractice {
 	}
 
 	/**
-	 * Exercise: 11
-	 * 
-	 * Write a method that take one number input and return an Array that
-	 * contains 0 to that given number.
-	 * 
-	 * Parameter: int number
-	 * 
-	 * Return Type: int[]
-	 * 
-	 * Serving Bucket: Array
+	 * Exercise: 11 Write a method that take one number input and return an
+	 * Array that contains 0 to that given number. Parameter: int number Return
+	 * Type: int[] Serving Bucket: Array
 	 */
 
 	public static int[] getNumberArray(int number) {
-
 		int[] numberArray = new int[number + 1];
 
 		for (int i = 0; i <= number; i++) {
@@ -301,20 +242,12 @@ public class MethodPractice {
 	}
 
 	/**
-	 * Exercise: 10
-	 * 
-	 * Write a method that take one number input and return the square of that
-	 * given number.
-	 * 
-	 * Parameter: int number
-	 * 
-	 * Return type: int
-	 * 
+	 * Exercise: 10 Write a method that take one number input and return the
+	 * square of that given number. Parameter: int number Return type: int
 	 * Serving Bucket: Variable
 	 */
 
 	public static int getResult(int number) {
-
 		int result = 0;
 
 		for (int i = 1; i <= number; i++) {
@@ -324,20 +257,12 @@ public class MethodPractice {
 	}
 
 	/**
-	 * Exercise: 09
-	 * 
-	 * Write a method that take one number input and return the sum of 1 to that
-	 * given number.
-	 * 
-	 * Parameter: int number
-	 * 
-	 * Return type: int Serving
-	 * 
+	 * Exercise: 09 Write a method that take one number input and return the sum
+	 * of 1 to that given number. Parameter: int number Return type: int Serving
 	 * Bucket: Variable
 	 */
 
 	public static int getSum(int number) {
-
 		int sum = 0;
 
 		for (int i = 1; i <= number; i++) {
@@ -347,20 +272,12 @@ public class MethodPractice {
 	}
 
 	/**
-	 * Exercise: 08
-	 * 
-	 * Write a method that take one string input and return a List of all
-	 * character.
-	 * 
-	 * Parameter: String text
-	 * 
-	 * Return type: ArrayList<Character>
-	 * 
-	 * Serving Bucket: List
+	 * Exercise: 08 Write a method that take one string input and return a List
+	 * of all character. Parameter: String text Return type:
+	 * ArrayList<Character> Serving Bucket: List
 	 */
 
 	public static ArrayList<Character> getCharList(String text) {
-
 		ArrayList<Character> charList = new ArrayList<Character>();
 
 		for (int i = 0; i <= text.length() - 1; i++) {
@@ -370,20 +287,12 @@ public class MethodPractice {
 	}
 
 	/**
-	 * Exercise: 07
-	 * 
-	 * Write a method that take one String input and return the list of all
-	 * index.
-	 * 
-	 * Parameter: String text
-	 * 
-	 * Return type: ArrayList<integer>
-	 * 
+	 * Exercise: 07 Write a method that take one String input and return the
+	 * list of all index. Parameter: String text Return type: ArrayList<integer>
 	 * Serving Bucket/Container: List
 	 */
 
 	public static ArrayList<Integer> getIndexList(String text) {
-
 		ArrayList<Integer> indexList = new ArrayList<Integer>();
 
 		for (int i = 0; i <= text.length(); i++) {
@@ -393,16 +302,9 @@ public class MethodPractice {
 	}
 
 	/**
-	 * Exercise: 06
-	 * 
-	 * Write a method that take one string input and return same string in lower
-	 * case.
-	 * 
-	 * Parameter: String text
-	 * 
-	 * Return type: String
-	 * 
-	 * Serving Bucket: Variable
+	 * Exercise: 06 Write a method that take one string input and return same
+	 * string in lower case. Parameter: String text Return type: String Serving
+	 * Bucket: Variable
 	 */
 
 	public static String getLowerCase(String text) {
@@ -414,22 +316,12 @@ public class MethodPractice {
 	}
 
 	/**
-	 * Exercise: 05
-	 * 
-	 * Write a method that take one string input and return same string in upper
-	 * case.
-	 * 
-	 * Parameter:
-	 * 
-	 * String text
-	 * 
-	 * Return type: String
-	 * 
-	 * Serving Bucket: Variable
+	 * Exercise: 05 Write a method that take one string input and return same
+	 * string in upper case. Parameter: String text Return type: String Serving
+	 * Bucket: Variable
 	 */
 
 	public static String getStringInUpperCase(String text) {
-
 		String upperCase = null;
 
 		upperCase = text.toUpperCase();
@@ -438,19 +330,12 @@ public class MethodPractice {
 	}
 
 	/**
-	 * Exercise: 04
-	 * 
-	 * Write a method that take input as mile and return as kilometer.
-	 * 
-	 * Parameter: double mile
-	 * 
-	 * Return type: double
-	 * 
-	 * Serving Bucket: Variable
+	 * Exercise: 04 Write a method that take input as mile and return as
+	 * kilometer. Parameter: double mile Return type: double Serving Bucket:
+	 * Variable
 	 */
 
 	public static double getKilometerFromMile(double mile) {
-
 		double kilometer = 0;
 
 		kilometer = mile * 1.61;
@@ -459,20 +344,12 @@ public class MethodPractice {
 	}
 
 	/**
-	 * Exercise: 03
-	 * 
-	 * Write a method that take a number input and return the List of all odd
-	 * number from 0 to that given number.
-	 * 
-	 * Parameter: int number
-	 * 
-	 * Return type: ArrayList<Integer>
-	 * 
-	 * Serving Bucket: List
+	 * Exercise: 03 Write a method that take a number input and return the List
+	 * of all odd number from 0 to that given number. Parameter: int number
+	 * Return type: ArrayList<Integer> Serving Bucket: List
 	 */
 
 	public static ArrayList<Integer> getOddNumberList(int number) {
-
 		ArrayList<Integer> OddNumberList = new ArrayList<Integer>();
 
 		for (int i = 0; i <= number; i++) {
@@ -488,20 +365,12 @@ public class MethodPractice {
 	}
 
 	/**
-	 * Exercise: 02
-	 * 
-	 * Write a method that take a number input and return the List of all even
-	 * number from 0 to that given number.
-	 * 
-	 * Parameter: int number
-	 * 
-	 * Return type: ArrayList<Integer>
-	 * 
-	 * Serving Bucket: List
+	 * Exercise: 02 Write a method that take a number input and return the List
+	 * of all even number from 0 to that given number. Parameter: int number
+	 * Return type: ArrayList<Integer> Serving Bucket: List
 	 */
 
 	public static ArrayList<Integer> getEvenNumberList(int number) {
-
 		ArrayList<Integer> evenNumberList = new ArrayList<Integer>();
 
 		for (int i = 0; i <= number; i++) {
@@ -517,21 +386,12 @@ public class MethodPractice {
 	}
 
 	/**
-	 * Exercise: 01
-	 * 
-	 * Write a method that take your name input and return your name.
-	 * 
-	 * Parameter: String text
-	 * 
-	 * Return type: String
-	 * 
-	 * Serving Bucket: Variable
+	 * Exercise: 01 Write a method that take your name input and return your
+	 * name. Parameter: String text Return type: String Serving Bucket: Variable
 	 */
 
 	public static String getName(String text) {
-
 		String name = null;
-
 		name = text;
 
 		return name;
