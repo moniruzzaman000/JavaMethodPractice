@@ -52,79 +52,72 @@ public class MethodPractice {
 		System.out.println("Exercise: 21 " + getListOfFirstFiveChar("Gangs of Wasipur"));
 
 		System.out.println("Exercise: 22 " + getFifthToTenthCharAsString("OnlyOneThingThatIhaveDoneVeryWell"));
-		
+
 		System.out.println("Exercise: 23 " + getListOfAllWord("This is a String"));
-		
+
 		System.out.println("Exercise: 24 " + getFirstWord("This is a String"));
 
 		System.out.println("Exercise: 25 " + getResult("This is A String", "a"));
 	}
-	
+
 	/**
-	 * Exercise: 25
-	 * Write a method that take one string and one word input and return true 
-	 * if that string contain that given word otherwise return false.
-	 * Parameter: String text
-	 * Return type: boolean
-	 * Serving Container: Variable
+	 * Exercise: 25 Write a method that take one string and one word input and
+	 * return true if that string contain that given word otherwise return
+	 * false. Parameter: String text Return type: boolean Serving Container:
+	 * Variable
 	 */
-	
-	public static boolean getResult(String text, String word){
+
+	public static boolean getResult(String text, String word) {
 		boolean result = false;
-		
+
 		text = text.toLowerCase();
-		
-		if (text.contains(word)){
+
+		if (text.contains(word)) {
 			result = true;
 		} else {
 			result = false;
 		}
-		
+
 		return result;
 	}
-	
+
 	/**
-	 * Exercise: 24
-	 * Write a method that take one String input and return first word.
-	 * Parameter: String text
-	 * Return type: String
-	 * Serving Container: Variable
+	 * Exercise: 24 Write a method that take one String input and return first
+	 * word. Parameter: String text Return type: String Serving Container:
+	 * Variable
 	 */
-	public static String getFirstWord(String text){
+	public static String getFirstWord(String text) {
 		String firstWord = null;
-		
+
 		String[] wordArray = text.split(" ");
-		
+
 		firstWord = wordArray[0];
-		
+
 		return firstWord;
 	}
-	
-	
+
 	/**
-	 * Exercise: 23
-	 * Write a method that take a String input and return a List of all word.
-	 * Parameter: String text
-	 * Return type: ArrayList<String>
-	 * Serving Container: List
+	 * Exercise: 23 Write a method that take a String input and return a List of
+	 * all word. Parameter: String text Return type: ArrayList<String> Serving
+	 * Container: List
 	 */
-	
-	public static ArrayList<String> getListOfAllWord( String text ){
+
+	public static ArrayList<String> getListOfAllWord(String text) {
 		ArrayList<String> wordList = new ArrayList<String>();
-		
+
 		String[] wordArray = text.split(" ");
-		
-		for ( int i = 0; i < wordArray.length; i++){
-		  
+
+		for (int i = 0; i < wordArray.length; i++) {
+
 			wordList.add(wordArray[i]);
 		}
-		
+
 		return wordList;
 	}
 
 	/**
-	 * Exercise: Write a method that take a string input and return the 5th to
-	 * 10th character as a string. Parameter: String text Return type: String
+	 * Exercise: 22 Write a method that take a string input and return the 5th
+	 * to 10th character as a string. Parameter: String text Return type: String
 	 * Serving Container: Variable
 	 */
 
