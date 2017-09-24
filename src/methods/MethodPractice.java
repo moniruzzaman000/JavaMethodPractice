@@ -58,6 +58,33 @@ public class MethodPractice {
 		System.out.println("Exercise: 24 " + getFirstWord("This is a String"));
 
 		System.out.println("Exercise: 25 " + getResult("This is A String", "a"));
+
+		System.out.println("Exercise: 26 "
+				+ getCountOfGivenWord("A Little knowledge is dangerous thing. little Little  ", "Little"));
+	}
+
+	/**
+	 * Exercise: 26 Write a method that take one string and one word input and
+	 * return the count of that given word. Parameter: String text, String word
+	 * ReturnType: int ServingContainer: Variable
+	 */
+
+	public static int getCountOfGivenWord(String text, String word) {
+		int count = 0;
+
+		String[] wordArray = text.split(" ");
+
+		for (int i = 0; i < wordArray.length; i++) {
+
+			// System.out.println(wordArray[i]);
+
+			if (word.equalsIgnoreCase(wordArray[i])) {
+
+				count++;
+			}
+		}
+
+		return count;
 	}
 
 	/**
