@@ -61,6 +61,104 @@ public class MethodPractice {
 
 		System.out.println("Exercise: 26 "
 				+ getCountOfGivenWord("A Little knowledge is dangerous thing. little Little  ", "Little"));
+
+		System.out.println("Exercise: 27 " + getConsonantCount("Moniruzzaman Monir"));
+
+		System.out.println("Exercise: 28 " + getCountOfAllVowels("Moniruzzaman Monir"));
+
+		System.out.println("Exercise: 29 " + getUpperCaseCharCount("Moniruzzaman Monir"));
+
+		System.out.println("Exercise: 30 " + getCountOfAllChar("Moniruzzaman Monir"));
+	}
+
+	/**
+	 * Exercise: 30 Write a method that take one String input and return the
+	 * count of all characters without whitespace. Parameter: String text Return
+	 * Type: int ServingContainer: Variable
+	 */
+
+	public static int getCountOfAllChar(String text) {
+		int count = 0;
+		text = text.replace(" ", "");
+
+		count = text.length();
+
+		return count;
+	}
+
+	/**
+	 * Exercise: 29 Write a method that take one String input and return the
+	 * count of all upper case character. Parameter: String text ReturnType: int
+	 * ServingContainer: Variable
+	 */
+
+	public static int getUpperCaseCharCount(String text) {
+		int count = 0;
+
+		String upperCaseChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+		for (int i = 0; i < text.length(); i++) {
+
+			String character = String.valueOf(text.charAt(i));
+
+			if (upperCaseChar.contains(character)) {
+				count++;
+			}
+
+		}
+
+		return count;
+	}
+
+	/**
+	 * Exercise: 28 Write a method that take one String input and return the
+	 * count of all vowels. Parameter: String text ReturnType: int
+	 * ServingContainer: Variable
+	 */
+
+	public static int getCountOfAllVowels(String text) {
+		int count = 0;
+
+		text = text.toLowerCase();
+
+		String vowels = "aeiou";
+
+		for (int i = 0; i < text.length(); i++) {
+
+			String character = String.valueOf(text.charAt(i));
+
+			if (vowels.contains(character)) {
+				count++;
+			}
+		}
+
+		return count;
+	}
+
+	/**
+	 * Exercise: 27 Write a method that take one string input and return the
+	 * count of all consonant. Parameter: String text Return type: int
+	 * ServingContainer: Variable
+	 */
+
+	public static int getConsonantCount(String text) {
+		int count = 0;
+
+		text = text.toLowerCase();
+
+		String consonent = "bcdfghjklmnpqrstvwxyz";
+
+		for (int i = 0; i < text.length(); i++) {
+
+			String character = String.valueOf(text.charAt(i));
+
+			if (consonent.contains(character)) {
+
+				count++;
+			}
+		}
+
+		return count;
 	}
 
 	/**
